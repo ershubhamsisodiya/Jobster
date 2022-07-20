@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/icons/icon-128x128.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <title>jobster</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-blue">j</span>obster</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                </ul>
+                <div class="d-flex navbar-btn">
+                    <button class="btn text-light bg-blue rounded-pill me-2">Post a job</button>
+                    <button class="btn btn-outline-light rounded-pill" type="submit">sign in</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner py-5">
+        <div class="w-100 bg-card"></div>
+        <div class="container position-relative banner-container d-flex">
+            <div class="w-50 header1">
+                <h1 class="banner-heading">Find the perfect <span class="text-blue">job&nbsp;</span>for you</h1>
+                <p class="banner-quote text-secondary my-4">Search your career opportunity through <b
+                        class="text-dark">12,800</b> jobs</p>
+
+                <div class="search-bar shadow d-flex">
+                    <input class="form-control ps-4" type="search" placeholder="Job Title or Keyword"
+                        aria-label="Search">
+                    <input class="form-control pe-5 me-3" type="search" placeholder="Location" aria-label="Search">
+                </div>
+
+                <div class="w-76 my-5 py-2 search-item">
+                    <h5 class="content-heading">Popular Searches</h5>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Work from home</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Part-Time</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Administration</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Finance</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Retail</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">IT</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Engineering</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Sales</button>
+                    <button class="btn bg-light-blue rounded-pill text-blue">Manufacturing</button>
+                </div>
+
+                <div class="banner-logo pt-5 flex-wrap d-flex">
+                    <div class="logo"><i class="fa-solid fa-book-bookmark"></i> logoipsum'</div>
+                    <div class="logo"><i class="fa-solid fa-bore-hole"></i> logoipsum'</div>
+                    <div class="logo"><i class="fa-solid fa-bowl-rice"></i> logoipsum'</div>
+                    <div class="logo"><i class="fa-solid fa-bowl-rice"></i> logoipsum'</div>
+                    <div class="logo"><i class="fa-brands fa-bilibili"></i> logoipsum'</div>
+                    <div class="logo"><i class="fa-brands fa-bots"></i> logoipsum'</div>
+                </div>
+
+            </div>
+
+            <div class="w-50 header2">
+                <div class="banner-cards w-50 mx-auto">
+                    <div class="img-card bg-light-blue"></div>
+                    <div class="img-card bg-blue"></div>
+                    <div class="img-card bg-warning"></div>
+                </div>
+                <div class="banner-notify shadow bg-light">
+                    <div class="notification mb-3"><span>319</span><span>job offers</span>
+                        <p>in Human Resources</p>
+                    </div>
+                    <div class="notification mb-3"><span>120</span><span>job offers</span>
+                        <p>in Human Resources</p>
+                    </div>
+                    <div class="notification mb-3"><span>176</span><span>job offers</span>
+                        <p>in Human Resources</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category container my-5">
+        <div class="heading2 text-center py-4">
+            <h2>Search by Category</h2>
+            <p>Search your career opportunity with our categories</p>
+        </div>
+        <div class="category-cards d-flex justify-content-center flex-column">
+            <div class="row py-2">
+                <div class="col-sm-6  col-md-4 col-lg-3 col-xl-2">
+                    <div class="category-item bg-section">
+                        <div class="p-4 shadow item-icon bg-light d-flex justify-content-center mx-auto"><i
+                                class="fa-solid fa-chart-simple"></i></div>
+                        <h6 class="text-center my-4">Business Development</h6>
+                        <p class="text-center text-secondary">139 open positions</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6  col-md-4 col-lg-3 col-xl-2">
+                    <div class="category-item bg-section">
+                        <div class="p-4 shadow item-icon bg-light d-flex justify-content-center mx-auto"><i
+                                class="fa-solid fa-chart-simple"></i></div>
+                        <h6 class="text-center my-4">Business Development</h6>
+                        <p class="text-center text-secondary">139 open positions</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6  col-md-4 col-lg-3 col-xl-2">
+                    <div class="category-item bg-section">
+                        <div class="p-4 shadow item-icon bg-light d-flex justify-content-center mx-auto"><i
+                                class="fa-solid fa-chart-simple"></i></div>
+                        <h6 class="text-center my-4">Business Development</h6>
+                        <p class="text-center text-secondary">139 open positions</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6  col-md-4 col-lg-3 col-xl-2">
+                    <div class="category-item bg-section">
+                        <div class="p-4 shadow item-icon bg-light d-flex justify-content-center mx-auto"><i
+                                class="fa-solid fa-chart-simple"></i></div>
+                        <h6 class="text-center my-4">Business Development</h6>
+                        <p class="text-center text-secondary">139 open positions</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6  col-md-4 col-lg-3 col-xl-2">
+                    <div class="category-item bg-section">
+                        <div class="p-4 shadow item-icon bg-light d-flex justify-content-center mx-auto"><i
+                                class="fa-solid fa-chart-simple"></i></div>
+                        <h6 class="text-center my-4">Business Development</h6>
+                        <p class="text-center text-secondary">139 open positions</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6  col-md-4 col-lg-3 col-xl-2">
+                    <div class="category-item bg-section">
+                        <div class="p-4 shadow item-icon bg-light d-flex justify-content-center mx-auto"><i
+                                class="fa-solid fa-chart-simple"></i></div>
+                        <h6 class="text-center my-4">Business Development</h6>
+                        <p class="text-center text-secondary">139 open positions</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-blue my-2 mx-auto">All Categories</button>
+        </div>
+    </div>
+
+    <div class="job-offers bg-yellow py-5">
+        <div class="container">
+            <div class="heading2 text-center py-4">
+                <h2>Featured Job Offers</h2>
+                <p>Search your career opportunity through 12,800 jobs</p>
+            </div>
+
+            <div class="job-cards d-flex justify-content-center flex-column">
+                <div class="row py-3">
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Senior Editor</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Software Engineering Team Leader</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Software Engineering Team Leader</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Senior Editor</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Senior Editor</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Software Engineering Team Leader</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Software Engineering Team Leader</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="job-item bg-white p-4 my-3 rounded-5 shadow-sm">
+                            <div class="job-title d-flex">
+                                <i class="fa-solid fs-7 fa-bullhorn bg-light-blue rounded-4 p-2"></i>
+                                <p class="text-secondary my-auto ms-2">Marketing & Communication</p>
+                            </div>
+                            <h6 class="my-4 card-heading">Senior Editor</h6>
+                            <div class="job-location d-flex">
+                                <p class="text-dark"><b>San Francisco, CA</b></p>
+                                <p class="ms-4">Full-time</p>
+                            </div>
+
+                            <div
+                                class="job-footer position-absolute bottom-0 mb-4 left-0 px-4 d-flex w-100 justify-content-between">
+                                <div class="my-auto">
+                                    <p>3 days ago by</p>
+                                    <p class="text-dark"><b>Artistre Studio</b></p>
+                                </div>
+                                <div
+                                    class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="btn btn-blue my-2 mx-auto">All Job Offers</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="find-best container my-5">
+        <div class="heading2 text-center py-4">
+            <h2>Find Best Companies</h2>
+            <p>Work for the best companies in the world</p>
+        </div>
+
+        <div class="best-cards d-flex justify-content-center flex-column">
+            <div class="row py-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="find-best-item p-4 my-3 border border-1 rounded-5">
+                        <div
+                            class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h6 class="my-2 card-heading">Artistre Studio</h6>
+                        <p class="pt-3 pb-5 me-3">is an American multinational computer lsoftware company. incorporated
+                            in
+                            Delaware and
+                            headquartered in San Jose, California, it has historically speciallized in software for the
+                            creation.</p>
+                        <h6 class="position-absolute bottom-0 mb-4">10 jobs</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="find-best-item p-4 my-3 border border-1 rounded-5">
+                        <div
+                            class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h6 class="my-2 card-heading">Artistre Studio</h6>
+                        <p class="pt-3 pb-5 me-3">is an American multinational computer lsoftware company. incorporated
+                            in
+                            Delaware and
+                            headquartered in San Jose, California.</p>
+                        <h6 class="position-absolute bottom-0 mb-4">10 jobs</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="find-best-item p-4 my-3 border border-1 rounded-5">
+                        <div
+                            class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h6 class="my-2 card-heading">Artistre Studio</h6>
+                        <p class="pt-3 pb-5 me-3">is an American multinational computer lsoftware company. incorporated
+                            in
+                            Delaware and
+                            headquartered in San Jose, California, it has historically speciallized in software for the
+                            creation.</p>
+                        <h6 class="position-absolute bottom-0 mb-4">10 jobs</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="find-best-item p-4 my-3 border border-1 rounded-5">
+                        <div
+                            class="bg-blue fs-1 text-light d-flex align-items-center justify-content-center company-icon rounded-1rem">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h6 class="my-2 card-heading">Artistre Studio</h6>
+                        <p class="pt-3 pb-4 me-3">is an American multinational computer lsoftware company. incorporated
+                            in
+                            Delaware and
+                            headquartered in San Jose, California.</p>
+                        <h6 class="position-absolute bottom-0 mb-4">10 jobs</h6>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-blue my-2 mx-auto">All Companies</button>
+        </div>
+    </div>
+
+    <div class="cities container mt-5">
+        <div class="heading2 text-center py-4">
+            <h2>Featured Cities</h2>
+            <p>Start your next career in a beautiful city</p>
+        </div>
+        <div class="cities-cards d-flex justify-content-center flex-column">
+            <div class="row-grid py-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="cities-item  rounded-5 bg-yellow-card">
+                        <img class="rounded-5 bg-yellow" src="images/png1.png" width="100%" height="55%"
+                            alt="image-one">
+                        <div class="cities-footer p-4">
+                            <h6 class="card-heading">London, UK</h6>
+                            <p class="text-secondary">452 open positions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 row-span-2 col-sm-6">
+                    <div class="cities-item  h-100 rounded-5 bg-yellow-card">
+                        <img class="rounded-5 bg-yellow" src="images/png2.png" width="100%" height="80%"
+                            alt="image-one">
+                        <div class="cities-footer p-4">
+                            <h6 class="card-heading">Paris, France</h6>
+                            <p class="text-secondary">452 open positions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="cities-item  rounded-5 bg-yellow-card">
+                        <img class="rounded-5 bg-yellow" src="images/png3.png" width="100%" height="55%"
+                            alt="image-one">
+                        <div class="cities-footer p-4">
+                            <h6 class="card-heading">San Francisco, CA</h6>
+                            <p class="text-secondary">244 open positions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="cities-item  rounded-5 bg-yellow-card">
+                        <img class="rounded-5 bg-yellow" src="images/png4.png" width="100%" height="55%"
+                            alt="image-one">
+                        <div class="cities-footer p-4">
+                            <h6 class="card-heading">London, UK</h6>
+                            <p class="text-secondary">452 open positions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="cities-item  rounded-5 bg-yellow-card">
+                        <img class="rounded-5 bg-yellow" src="images/png5.png" width="100%" height="55%"
+                            alt="image-one">
+                        <div class="cities-footer p-4">
+                            <h6 class="card-heading">San Francisco, CA</h6>
+                            <p class="text-secondary">244 open positions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="cities-item  rounded-5 bg-yellow-card">
+                        <img class="rounded-5 bg-yellow" src="images/png6.png" width="100%" height="55%"
+                            alt="image-one">
+                        <div class="cities-footer p-4">
+                            <h6 class="card-heading">San Francisco, CA</h6>
+                            <p class="text-secondary">244 open positions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="cities-item  rounded-5 bg-yellow-card">
+                        <img class="rounded-5 bg-yellow" src="images/png7.png" width="100%" height="55%"
+                            alt="image-one">
+                        <div class="cities-footer p-4">
+                            <h6 class="card-heading">San Francisco, CA</h6>
+                            <p class="text-secondary">244 open positions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="my-5 container pb-4 contact-form">
+        <div class="heading2 text-center pt-4 pb-1">
+            <h2>Stay Up to Date</h2>
+            <p>Subscribe to our newsletter to receive our weekly feed.</p>
+        </div>
+        <div class="w-35 contact-img mx-auto pt-1 d-flex justify-content-center">
+            <img src="images/contact.png" width="80%" alt="contact jpeg">
+        </div>
+        <div class="contact-input border border-1 rounded-pill mb-1 w-35 mx-auto d-flex">
+            <input class="form-control border border-0 rounded-pill ps-4" type="email" placeholder="Email Here..."
+                aria-label="Search">
+            <button class="btn btn-blue">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="footer bg-section py-5">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-sm-12 col-md-12 col-xl-4">
+                    <div class="my-3 w-47 footer-colum">
+                        <h4><span class="py-2 text-blue">j</span>obster</h4>
+                        <p class="text-dark footer-heading pt-3"><b> call us</b></p>
+                        <h5 class="text-blue pb-2">(123) 456-7890</h5>
+                        <p class="text-secondary">90 Fifth Avenue, 3rd Floor San Francisco, CA 1980 office@jobster.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-xl-2">
+                    <div class="my-3 footer-colum">
+                        <p class="text-dark footer-heading">
+                            <b>For Candidates</b>
+                        </p>
+                        <p class="text-secondary pt-2">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-xl-2">
+                    <div class="my-3 footer-colum">
+                        <p class="text-dark footer-heading">
+                            <b>For Candidates</b>
+                        </p>
+                        <p class="text-secondary pt-2">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-xl-2">
+                    <div class="my-3 footer-colum">
+                        <p class="text-dark footer-heading">
+                            <b>For Candidates</b>
+                        </p>
+                        <p class="text-secondary pt-2">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-xl-2">
+                    <div class="my-3 footer-colum">
+                        <p class="text-dark footer-heading">
+                            <b>For Candidates</b>
+                        </p>
+                        <p class="text-secondary pt-2">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                        <p class="text-secondary">Find Jobs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-end bg-yellow-card py-5">
+        <div class="container pt-3 d-flex justify-content-between flex-wrap">
+            <p class="text-secondary">&copy; 2021 Jobster. All Right Reserved.</p>
+            <div class="d-flex flex-wrap social-links">
+                <i class="fa-brands social-items fa-facebook-f"></i>
+                <i class="fa-brands social-items fa-twitter"></i>
+                <i class="fa-brands social-items fa-instagram"></i>
+                <i class="fa-brands social-items fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/bootstrap.bundle.min.js"></script>
+
+    <script src="function.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
