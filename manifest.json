@@ -4,7 +4,8 @@
     "description": "Jobster PWA application",
     "start-url": "/index.html",
     "display": "standalone",
-    "background_color": "#D9E9F6",
+    "background_color": "#072746",
+    "color":"white",
     "theme_color": "#2269C3",
     "orientation": "portrait-primary",
     "icons": [
