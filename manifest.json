@@ -2,7 +2,7 @@
     "name": "Jobster web",
     "short_name": "Jobster",
     "description": "Jobster PWA application",
-    "start-url": "/",
+    "start_url": "index.html",
     "scope": "/",
     "display": "standalone",
     "color":"white",
