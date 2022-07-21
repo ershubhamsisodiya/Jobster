@@ -1,6 +1,6 @@
 const version = 6;
 const preCacheName = `static-${version}`;
-const preCache = ['style.css', 'index.html', 'function.js','assets','images','manifest.json'];
+const preCache = ['style.css', 'index.html', 'function.js','assets/bootstrap.bundle.min.js','assets/bootstrap.min.css','manifest.json','sw.js'];
 
 self.addEventListener('install', (ev) => {
     console.log("Service worker installed");
