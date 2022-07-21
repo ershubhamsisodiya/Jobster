@@ -1,80 +1,50 @@
-const version = 6;
-const preCacheName = `static-${version}`;
-const preCache = ['style.css', 'index.html', 'function.js','assets/bootstrap.bundle.min.js','assets/bootstrap.min.css','manifest.json','sw.js'];
+const cacheName = 'v1';
+const staticAssets = [
+    'style.css',
+    'index.html',
+    'function.js',
+    'assets/bootstrap.bundle.min.js',
+    'assets/bootstrap.min.css', 'manifest.json',
+    'images/icons/icon-128x128.png',
+    'images/icons/icon-192x192.png',
+    'assets/app.js'
+];
 
-self.addEventListener('install', (ev) => {
-    console.log("Service worker installed");
-    //installed
-    ev.waitUntil(
-        caches
-            .open(preCacheName)
-            .then((cache) => {
-                console.log('caching the static files');
-                cache.addAll(preCache);
-            })
-            .catch(console.warn)
-    );
-    //load pre-cache
+self.addEventListener('install', async e => {
+    const cache = await caches.open(cacheName);
+    await cache.addAll(staticAssets);
+    return self.skipWaiting();
 });
 
-self.addEventListener('activate', (ev) => {
-    console.log("Service worker activated");
-    //activating
-    ev.waitUntil(
-        caches
-            .keys()
-            .then((keys) => {
-                return Promise.all(
-                    keys
-                        .filter((key) => key !== preCacheName)
-                        .map((key) => caches.delete(key))
-                );
-            })
-            .catch(console.warn)
-    );
-    //delete old caches
+self.addEventListener('activate', e => {
+    self.clients.claim();
 });
 
-self.addEventListener('fetch', (ev) => {
-    //fetch request received
-    //send back a response from cache or fetch
-    ev.respondWith(
-        caches.match(ev.request).then((cacheRes) => {
-            return (
-                cacheRes ||
-                fetch(ev.request).then(
-                    (response) => {
-                        return response;
-                    },
-                    (err) => {
-                        //network failure
-                        //send something else from the cache?
-                        if (
-                            ev.request.url.indexOf('.html') > -1 ||
-                            ev.request.mode == 'navigation'
-                        ) {
-                            return caches.match('404.html');
-                        }
-                    }
-                )
-            );
-        })
-    );
+self.addEventListener('fetch', async e => {
+    const req = e.request;
+    const url = new URL(req.url);
+
+    if (url.origin === location.origin) {
+        e.respondWith(cacheFirst(req));
+    } else {
+        e.respondWith(networkAndCache(req));
+    }
 });
 
-self.addEventListener('message', (ev) => {
-    //message received
-    //do things based on message props
-    let data = ev.data;
-    console.log('SW received', data);
-});
+async function cacheFirst(req) {
+    const cache = await caches.open(cacheName);
+    const cached = await cache.match(req);
+    return cached || fetch(req);
+}
 
-const sendMessage = async (msg) => {
-    let allClients = await clients.matchAll({ includeUncontrolled: true });
-    return Promise.all(
-        allClients.map((client) => {
-            let channel = new MessageChannel();
-            return client.postMessage(msg);
-        })
-    );
-};
+async function networkAndCache(req) {
+    const cache = await caches.open(cacheName);
+    try {
+        const fresh = await fetch(req);
+        await cache.put(req, fresh.clone());
+        return fresh;
+    } catch (e) {
+        const cached = await cache.match(req);
+        return cached;
+    }
+}
