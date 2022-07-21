@@ -11,7 +11,7 @@ const APP = {
         navigator.serviceWorker
           .register('./sw.js', {
             updateViaCache: 'none',
-            scope: './',
+            
           })
           .then(() => {
             //finished registering
