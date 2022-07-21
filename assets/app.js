@@ -1,7 +1,3 @@
-// if ('serviceWorker' in navigator) {
-//     navigator.serviceWorker.register("./sw.js");
-// }
-
 
 const APP = {
     deferredInstall: null,
@@ -10,14 +6,15 @@ const APP = {
         //register our service worker
         navigator.serviceWorker
           .register('./sw.js', {
-            updateViaCache: 'none'
+            updateViaCache: 'none',
           })
           .then(() => {
+            console.log('sw registered');
             //finished registering
           })
           .catch((err) => {
             console.warn('Failed to register', err.message);
-          });
+          });   
         //listen for messages
         navigator.serviceWorker.addEventListener('message', ({ data }) => {
           //received a message from the service worker
